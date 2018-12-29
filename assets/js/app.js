@@ -165,7 +165,7 @@ d3.csv("assets/data/data2.csv").then(function(paperData) {
       .attr("class", "tooltip")
       .offset([80, -60])
       .html(function(data) {
-        return (`${data.state}<br>${chosenXaxis} : ${data[chosenYaxis]} <br> ${chosenYaxis} : ${data[chosenYaxis]}%`);
+        return (`${data.state}<br>${chosenXaxis} : ${data[chosenXaxis]} <br> ${chosenYaxis} : ${data[chosenYaxis]}%`);
      });
    
     chartGroup.call(toolTip);
